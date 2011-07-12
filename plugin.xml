@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="JVeloce"
+            visible="true"
+            id="org.chies.jveloce.plugin.actionSet">
+         <menu
+               label="JVeloce"
+               id="jveloceMenu">
+            <separator>name="jveloceGroup"></separator>
+         </menu>
+         <action
+               label="Redefine class"
+               class="org.chies.jveloce.eclipse.JVeloceAction"
+               menubarPath="jveloceMenu/jveloceGroup"
+               id="jveloceAction">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
